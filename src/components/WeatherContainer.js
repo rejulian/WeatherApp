@@ -15,7 +15,7 @@ const WeatherContainer = () => {
 
 
     useEffect(()=>{
-        fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`)
         .then(res=>res.json())
         .then(data=> {
             setWeather(data)
