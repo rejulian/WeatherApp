@@ -3,9 +3,9 @@ import WeatherContainer from './components/WeatherContainer';
 
 function App() {
     return (
-      <>
+      <main className='main'>
         <WeatherContainer/>
-      </>
+      </main>
     );
   }
 

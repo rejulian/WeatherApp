@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { WeatherContext } from './WeatherContainer'
+import styles from './WeatherInfo.module.css'
 
 const WeatherForm = () => {
     const {setCity} = useContext(WeatherContext)
@@ -11,12 +12,10 @@ const WeatherForm = () => {
     }
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={cityForm} onChange={(e)=>{setCityForm(e.target.value)}}/>
-            <input type="submit" value='Enviar' />
+        <form onSubmit={handleSubmit} className={styles.center}>
+            <input type="text" value={cityForm} onChange={(e)=>{setCityForm(e.target.value)}} className={styles.textInput}/>
+            <input type="submit" value='Enviar' className={styles.btn}/>
         </form>
-    </div>
   )
 }
 

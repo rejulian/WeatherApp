@@ -2,6 +2,7 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import WeatherInfo from './WeatherInfo'
 import { createContext } from "react";
+import styles from './WeatherInfo.module.css'
 
 export const WeatherContext = createContext()
 
@@ -24,7 +25,7 @@ const WeatherContainer = () => {
     },[city])
 
   return (
-    <div>
+    <div className={styles.container}>
         {isLoading ? <div className="lds-dual-ring"></div> : <WeatherContext.Provider value={{setCity}}><WeatherInfo weather={weather}></WeatherInfo></WeatherContext.Provider>}
     </div>
   )

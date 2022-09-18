@@ -1,0 +1,48 @@
+.container{
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.location{
+    text-align: center;
+}
+
+.location h1{
+    font-size: 25px;
+}
+
+.mainInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.mainInfo img{
+    width: 70px;
+}
+
+.mainInfo span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.textInput{
+    width: 200px;
+    padding: 5px;
+}
+
+.btn{
+    padding: 6px 10px;
+    background: black;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
