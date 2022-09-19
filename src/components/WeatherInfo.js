@@ -4,7 +4,7 @@ import styles from './WeatherInfo.module.css'
 
 const WeatherInfo = ({weather}) => {
 
-    const time = weather.location.localtime.split(' ').slice(1,3)
+    const time = weather.location.localtime.split(' ').pop()
 
   return (
     <>
