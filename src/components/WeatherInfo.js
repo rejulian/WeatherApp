@@ -4,12 +4,17 @@ import styles from './WeatherInfo.module.css'
 
 const WeatherInfo = ({weather}) => {
 
+    const time = weather.location.localtime.split(' ').slice(1,3)
+
   return (
     <>
         <WeatherForm/>
         <div className={styles.location}>
             <h1>{weather.location.name}</h1>
-            <p>{weather.location.region}</p>
+            <div>
+                <p>{weather.location.region}</p>
+                <p>{time}</p>
+            </div>
         </div>
         <div className={styles.mainInfo}>
             <img src={weather.current.condition.icon} alt="" />
