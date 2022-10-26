@@ -8,7 +8,7 @@ export const WeatherContext = createContext()
 
 const WeatherContainer = () => {
 
-    const API_KEY = '5caab7eb5c394beaadb145305220210'
+    const API_KEY = '45c8a34135274ff0b6f214109222610'
     const [city, setCity] = useState('San Nicolas de los Arroyos')
     const [weather, setWeather] = useState({})
     const [isLoading, setIsLoading] = useState(true)
